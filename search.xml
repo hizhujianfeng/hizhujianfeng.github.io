@@ -3,9 +3,9 @@
   
     
     <entry>
-      <title><![CDATA[My Gallery]]></title>
-      <url>%2F2017%2F03%2F15%2FMy-Gallery%2F</url>
-      <content type="text"></content>
+      <title><![CDATA[jdbc连接oracle时url的三种方式]]></title>
+      <url>%2F2017%2F03%2F20%2Foracle_jdbc%2F</url>
+      <content type="text"><![CDATA[使用jdbc连接oracle数据库时需要填写url,主要如下三种方式： SID方式jdbc:oracle:thin:username/password@x.x.x.1:1521:SID ServerName方式jdbc:oracle:thin:username/password@//x.x.x.1:1522/ServerName RAC方式jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=x.x.x.1)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST=x.x.x.2)(PORT=1521)))(LOAD_BALANCE=yes)(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=xxrac)))]]></content>
     </entry>
 
     

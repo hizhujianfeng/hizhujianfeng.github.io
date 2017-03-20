@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-15T12:39:17.227Z</updated>
+  <updated>2017-03-20T07:22:57.887Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,16 +16,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>My Gallery</title>
-    <link href="http://yoursite.com/2017/03/15/My-Gallery/"/>
-    <id>http://yoursite.com/2017/03/15/My-Gallery/</id>
-    <published>2017-03-15T12:39:17.000Z</published>
-    <updated>2017-03-15T12:39:17.227Z</updated>
+    <title>jdbc连接oracle时url的三种方式</title>
+    <link href="http://yoursite.com/2017/03/20/oracle_jdbc/"/>
+    <id>http://yoursite.com/2017/03/20/oracle_jdbc/</id>
+    <published>2017-03-20T06:59:00.170Z</published>
+    <updated>2017-03-20T07:22:57.887Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用jdbc连接oracle数据库时需要填写url,主要如下三种方式：   </p>
+<h2 id="SID方式"><a href="#SID方式" class="headerlink" title="SID方式"></a>SID方式</h2><pre><code>jdbc:oracle:thin:username/password@x.x.x.1:1521:SID
+</code></pre><h2 id="ServerName方式"><a href="#ServerName方式" class="headerlink" title="ServerName方式"></a>ServerName方式</h2><pre><code>jdbc:oracle:thin:username/password@//x.x.x.1:1522/ServerName
+</code></pre><h2 id="RAC方式"><a href="#RAC方式" class="headerlink" title="RAC方式"></a>RAC方式</h2><pre><code>jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=x.x.x.1)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST=x.x.x.2)(PORT=1521)))(LOAD_BALANCE=yes)(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=xxrac)))
+</code></pre>]]></content>
     
     <summary type="html">
     
+      &lt;p&gt;使用jdbc连接oracle数据库时需要填写url,主要如下三种方式：   &lt;/p&gt;
+&lt;h2 id=&quot;SID方式&quot;&gt;&lt;a href=&quot;#SID方式&quot; class=&quot;headerlink&quot; title=&quot;SID方式&quot;&gt;&lt;/a&gt;SID方式&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;jdbc
+    
     </summary>
     
+      <category term="运维" scheme="http://yoursite.com/categories/operation/"/>
+    
+    
+      <category term="oracle" scheme="http://yoursite.com/tags/oracle/"/>
     
   </entry>
   
@@ -34,7 +47,7 @@
     <link href="http://yoursite.com/2017/03/15/hello-world/"/>
     <id>http://yoursite.com/2017/03/15/hello-world/</id>
     <published>2017-03-15T06:22:25.872Z</published>
-    <updated>2017-03-15T06:22:25.882Z</updated>
+    <updated>2017-03-20T06:57:12.090Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>

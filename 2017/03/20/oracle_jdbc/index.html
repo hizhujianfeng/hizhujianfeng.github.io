@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="oracle," />
 
 
 
@@ -89,16 +89,25 @@
 
 
 
-<meta name="description" content="Java|Python|Linux">
-<meta property="og:type" content="website">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://yoursite.com/test/index.html">
+<meta name="description" content="使用jdbc连接oracle数据库时需要填写url,主要如下三种方式：   
+SID方式jdbc:oracle:thin:username/password@x.x.x.1:1521:SID
+ServerName方式jdbc:oracle:thin:username/password@//x.x.x.1:1522/ServerName
+RAC方式jdbc:oracle:thin:@(DESCRIP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jdbc连接oracle时url的三种方式">
+<meta property="og:url" content="http://yoursite.com/2017/03/20/oracle_jdbc/index.html">
 <meta property="og:site_name" content="乍暖还寒">
-<meta property="og:description" content="Java|Python|Linux">
-<meta property="og:updated_time" content="2017-03-15T06:56:06.753Z">
+<meta property="og:description" content="使用jdbc连接oracle数据库时需要填写url,主要如下三种方式：   
+SID方式jdbc:oracle:thin:username/password@x.x.x.1:1521:SID
+ServerName方式jdbc:oracle:thin:username/password@//x.x.x.1:1522/ServerName
+RAC方式jdbc:oracle:thin:@(DESCRIP">
+<meta property="og:updated_time" content="2017-03-20T07:22:57.887Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description" content="Java|Python|Linux">
+<meta name="twitter:title" content="jdbc连接oracle时url的三种方式">
+<meta name="twitter:description" content="使用jdbc连接oracle数据库时需要填写url,主要如下三种方式：   
+SID方式jdbc:oracle:thin:username/password@x.x.x.1:1521:SID
+ServerName方式jdbc:oracle:thin:username/password@//x.x.x.1:1522/ServerName
+RAC方式jdbc:oracle:thin:@(DESCRIP">
 
 
 
@@ -126,19 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/test/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/20/oracle_jdbc/"/>
 
 
 
 
 
-  <title>
-  
-
-  
-    test | 乍暖还寒
-  
-</title>
+  <title> jdbc连接oracle时url的三种方式 | 乍暖还寒 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -163,7 +166,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -310,18 +313,194 @@
             
 
   <div id="posts" class="posts-expand">
-  <header class="post-header">
+    
 
-	<h1 class="post-title" itemprop="name headline">test</h1>
+  
 
+  
+  
+  
 
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/20/oracle_jdbc/">
 
-</header>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jianfeng Zhu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/cute_dog.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="乍暖还寒">
+    </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                jdbc连接oracle时url的三种方式
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-20T14:59:00+08:00">
+                2017-03-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/operation/" itemprop="url" rel="index">
+                    <span itemprop="name">运维</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
-    
+      
+
+      
+        <p>使用jdbc连接oracle数据库时需要填写url,主要如下三种方式：   </p>
+<h2 id="SID方式"><a href="#SID方式" class="headerlink" title="SID方式"></a>SID方式</h2><pre><code>jdbc:oracle:thin:username/password@x.x.x.1:1521:SID
+</code></pre><h2 id="ServerName方式"><a href="#ServerName方式" class="headerlink" title="ServerName方式"></a>ServerName方式</h2><pre><code>jdbc:oracle:thin:username/password@//x.x.x.1:1522/ServerName
+</code></pre><h2 id="RAC方式"><a href="#RAC方式" class="headerlink" title="RAC方式"></a>RAC方式</h2><pre><code>jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=x.x.x.1)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST=x.x.x.2)(PORT=1521)))(LOAD_BALANCE=yes)(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=xxrac)))
+</code></pre>
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Jianfeng Zhu wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/uploads/wechatpay.jpg" alt="Jianfeng Zhu WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/oracle/" rel="tag"># oracle</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/15/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
           
@@ -353,8 +532,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/cute_dog.jpg"
@@ -376,7 +564,21 @@
           
 
           
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
@@ -439,6 +641,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#SID方式"><span class="nav-number">1.</span> <span class="nav-text">SID方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ServerName方式"><span class="nav-number">2.</span> <span class="nav-text">ServerName方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RAC方式"><span class="nav-number">3.</span> <span class="nav-text">RAC方式</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -551,6 +769,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
